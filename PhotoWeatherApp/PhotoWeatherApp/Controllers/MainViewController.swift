@@ -22,7 +22,6 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         self.photoLibraryAuthorizer = PhotoLibraryAuthorizer()
-
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
         self.imageMetaDecoder = ImageMetaDecoder(geocoder: CLGeocoder())
     }
