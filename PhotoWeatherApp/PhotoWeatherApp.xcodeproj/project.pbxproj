@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E2D97372B0BE9F400C0101F /* ImageMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D97362B0BE9F400C0101F /* ImageMeta.swift */; };
+		1E2D97392B0BEA4600C0101F /* ImageMetaDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D97382B0BEA4600C0101F /* ImageMetaDecoder.swift */; };
+		1E2D973B2B0BED7500C0101F /* PhotoLibraryAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D973A2B0BED7500C0101F /* PhotoLibraryAuthorizer.swift */; };
 		1E6189832B0B9CB30068A0B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6189822B0B9CB30068A0B2 /* AppDelegate.swift */; };
 		1E6189852B0B9CB30068A0B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6189842B0B9CB30068A0B2 /* SceneDelegate.swift */; };
 		1E6189872B0B9CB30068A0B2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6189862B0B9CB30068A0B2 /* MainViewController.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E2D97362B0BE9F400C0101F /* ImageMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMeta.swift; sourceTree = "<group>"; };
+		1E2D97382B0BEA4600C0101F /* ImageMetaDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMetaDecoder.swift; sourceTree = "<group>"; };
+		1E2D973A2B0BED7500C0101F /* PhotoLibraryAuthorizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryAuthorizer.swift; sourceTree = "<group>"; };
 		1E61897F2B0B9CB30068A0B2 /* Photo Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6189822B0B9CB30068A0B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E6189842B0B9CB30068A0B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E2D97322B0BE93100C0101F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1EF8FF422B0BC04E00202A2D /* ImagePicker.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1E2D97352B0BE98A00C0101F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1E2D97382B0BEA4600C0101F /* ImageMetaDecoder.swift */,
+				1E2D973A2B0BED7500C0101F /* PhotoLibraryAuthorizer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		1E6189762B0B9CB20068A0B2 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +126,7 @@
 		1E6189812B0B9CB30068A0B2 /* PhotoWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				1E2D97352B0BE98A00C0101F /* Services */,
 				1EF8FF412B0BACB500202A2D /* Assets */,
 				1E88E5202B0BAB3800865BF3 /* Delegates */,
 				1E88E51F2B0BAB1000865BF3 /* Data */,
@@ -142,7 +166,8 @@
 		1E88E51D2B0BAACC00865BF3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1EF8FF422B0BC04E00202A2D /* ImagePicker.swift */,
+				1E2D97322B0BE93100C0101F /* UI */,
+				1E2D97362B0BE9F400C0101F /* ImageMeta.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -315,7 +340,10 @@
 				1E6189872B0B9CB30068A0B2 /* MainViewController.swift in Sources */,
 				1E6189832B0B9CB30068A0B2 /* AppDelegate.swift in Sources */,
 				1EF8FF432B0BC04E00202A2D /* ImagePicker.swift in Sources */,
+				1E2D973B2B0BED7500C0101F /* PhotoLibraryAuthorizer.swift in Sources */,
+				1E2D97392B0BEA4600C0101F /* ImageMetaDecoder.swift in Sources */,
 				1E6189852B0B9CB30068A0B2 /* SceneDelegate.swift in Sources */,
+				1E2D97372B0BE9F400C0101F /* ImageMeta.swift in Sources */,
 				1E61898D2B0B9CB30068A0B2 /* PhotoWeatherApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

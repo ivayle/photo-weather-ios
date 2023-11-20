@@ -12,7 +12,7 @@ public protocol ImagePickerDelegate: AnyObject {
     func didSelect(image: UIImage?, info: [UIImagePickerController.InfoKey: Any])
 }
 
-open class ImagePicker: NSObject {
+class ImagePicker: NSObject {
 
     private let pickerController: UIImagePickerController
     private weak var presentationController: UIViewController?
