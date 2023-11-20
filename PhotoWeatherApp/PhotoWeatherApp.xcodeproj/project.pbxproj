@@ -17,6 +17,7 @@
 		1E61899D2B0B9CB50068A0B2 /* PhotoWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61899C2B0B9CB50068A0B2 /* PhotoWeatherAppTests.swift */; };
 		1E6189A72B0B9CB50068A0B2 /* PhotoWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6189A62B0B9CB50068A0B2 /* PhotoWeatherAppUITests.swift */; };
 		1E6189A92B0B9CB50068A0B2 /* PhotoWeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6189A82B0B9CB50068A0B2 /* PhotoWeatherAppUITestsLaunchTests.swift */; };
+		1EF8FF432B0BC04E00202A2D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8FF422B0BC04E00202A2D /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1E6189A22B0B9CB50068A0B2 /* PhotoWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6189A62B0B9CB50068A0B2 /* PhotoWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWeatherAppUITests.swift; sourceTree = "<group>"; };
 		1E6189A82B0B9CB50068A0B2 /* PhotoWeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1EF8FF422B0BC04E00202A2D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		1E88E51D2B0BAACC00865BF3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1EF8FF422B0BC04E00202A2D /* ImagePicker.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			files = (
 				1E6189872B0B9CB30068A0B2 /* MainViewController.swift in Sources */,
 				1E6189832B0B9CB30068A0B2 /* AppDelegate.swift in Sources */,
+				1EF8FF432B0BC04E00202A2D /* ImagePicker.swift in Sources */,
 				1E6189852B0B9CB30068A0B2 /* SceneDelegate.swift in Sources */,
 				1E61898D2B0B9CB30068A0B2 /* PhotoWeatherApp.xcdatamodeld in Sources */,
 			);
