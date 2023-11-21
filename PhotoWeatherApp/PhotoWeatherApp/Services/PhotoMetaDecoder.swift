@@ -8,7 +8,7 @@
 import Foundation
 import Photos
 
-class ImageMetaDecoder {
+class PhotoMetaDecoder {
     var geocoder: CLGeocoder?
     
     init(geocoder: CLGeocoder? = nil) {

@@ -8,7 +8,7 @@
 import Foundation
 import Photos
 
-struct ImageMeta {
+struct PhotoMeta {
     var date: Date?
     var location: CLLocation?
     

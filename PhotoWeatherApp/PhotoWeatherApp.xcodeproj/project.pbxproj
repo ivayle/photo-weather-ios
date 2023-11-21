@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E2D97372B0BE9F400C0101F /* ImageMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D97362B0BE9F400C0101F /* ImageMeta.swift */; };
-		1E2D97392B0BEA4600C0101F /* ImageMetaDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D97382B0BEA4600C0101F /* ImageMetaDecoder.swift */; };
+		1E2D97372B0BE9F400C0101F /* PhotoMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D97362B0BE9F400C0101F /* PhotoMeta.swift */; };
+		1E2D97392B0BEA4600C0101F /* PhotoMetaDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D97382B0BEA4600C0101F /* PhotoMetaDecoder.swift */; };
 		1E2D973B2B0BED7500C0101F /* PhotoLibraryAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D973A2B0BED7500C0101F /* PhotoLibraryAuthorizer.swift */; };
 		1E449F5B2B0C8F7900A5D831 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E449F5A2B0C8F7900A5D831 /* SpinnerViewController.swift */; };
+		1E449F5D2B0C997F00A5D831 /* PhotoWeatherMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E449F5C2B0C997F00A5D831 /* PhotoWeatherMeta.swift */; };
+		1E449F5F2B0C9A0000A5D831 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E449F5E2B0C9A0000A5D831 /* WeatherInfo.swift */; };
+		1E449F612B0C9A3800A5D831 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E449F602B0C9A3800A5D831 /* Weather.swift */; };
 		1E6189832B0B9CB30068A0B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6189822B0B9CB30068A0B2 /* AppDelegate.swift */; };
 		1E6189852B0B9CB30068A0B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6189842B0B9CB30068A0B2 /* SceneDelegate.swift */; };
 		1E6189872B0B9CB30068A0B2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6189862B0B9CB30068A0B2 /* MainViewController.swift */; };
@@ -46,10 +49,13 @@
 
 /* Begin PBXFileReference section */
 		1DD0EA005878EA156686C227 /* Pods-PhotoWeatherApp-PhotoWeatherAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoWeatherApp-PhotoWeatherAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoWeatherApp-PhotoWeatherAppUITests/Pods-PhotoWeatherApp-PhotoWeatherAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		1E2D97362B0BE9F400C0101F /* ImageMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMeta.swift; sourceTree = "<group>"; };
-		1E2D97382B0BEA4600C0101F /* ImageMetaDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMetaDecoder.swift; sourceTree = "<group>"; };
+		1E2D97362B0BE9F400C0101F /* PhotoMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMeta.swift; sourceTree = "<group>"; };
+		1E2D97382B0BEA4600C0101F /* PhotoMetaDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMetaDecoder.swift; sourceTree = "<group>"; };
 		1E2D973A2B0BED7500C0101F /* PhotoLibraryAuthorizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryAuthorizer.swift; sourceTree = "<group>"; };
 		1E449F5A2B0C8F7900A5D831 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		1E449F5C2B0C997F00A5D831 /* PhotoWeatherMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWeatherMeta.swift; sourceTree = "<group>"; };
+		1E449F5E2B0C9A0000A5D831 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		1E449F602B0C9A3800A5D831 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		1E61897F2B0B9CB30068A0B2 /* Photo Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6189822B0B9CB30068A0B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E6189842B0B9CB30068A0B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,7 +120,7 @@
 		1E2D97352B0BE98A00C0101F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1E2D97382B0BEA4600C0101F /* ImageMetaDecoder.swift */,
+				1E2D97382B0BEA4600C0101F /* PhotoMetaDecoder.swift */,
 				1E2D973A2B0BED7500C0101F /* PhotoLibraryAuthorizer.swift */,
 			);
 			path = Services;
@@ -187,7 +193,10 @@
 			isa = PBXGroup;
 			children = (
 				1E2D97322B0BE93100C0101F /* UI */,
-				1E2D97362B0BE9F400C0101F /* ImageMeta.swift */,
+				1E2D97362B0BE9F400C0101F /* PhotoMeta.swift */,
+				1E449F5C2B0C997F00A5D831 /* PhotoWeatherMeta.swift */,
+				1E449F5E2B0C9A0000A5D831 /* WeatherInfo.swift */,
+				1E449F602B0C9A3800A5D831 /* Weather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -491,12 +500,15 @@
 				1E6189872B0B9CB30068A0B2 /* MainViewController.swift in Sources */,
 				1E6189832B0B9CB30068A0B2 /* AppDelegate.swift in Sources */,
 				1EF8FF432B0BC04E00202A2D /* ImagePicker.swift in Sources */,
+				1E449F5F2B0C9A0000A5D831 /* WeatherInfo.swift in Sources */,
+				1E449F612B0C9A3800A5D831 /* Weather.swift in Sources */,
 				1E2D973B2B0BED7500C0101F /* PhotoLibraryAuthorizer.swift in Sources */,
-				1E2D97392B0BEA4600C0101F /* ImageMetaDecoder.swift in Sources */,
+				1E2D97392B0BEA4600C0101F /* PhotoMetaDecoder.swift in Sources */,
 				1E6189852B0B9CB30068A0B2 /* SceneDelegate.swift in Sources */,
-				1E2D97372B0BE9F400C0101F /* ImageMeta.swift in Sources */,
+				1E2D97372B0BE9F400C0101F /* PhotoMeta.swift in Sources */,
 				1E449F5B2B0C8F7900A5D831 /* SpinnerViewController.swift in Sources */,
 				1E61898D2B0B9CB30068A0B2 /* PhotoWeatherApp.xcdatamodeld in Sources */,
+				1E449F5D2B0C997F00A5D831 /* PhotoWeatherMeta.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
