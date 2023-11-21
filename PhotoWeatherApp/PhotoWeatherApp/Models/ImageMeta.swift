@@ -10,10 +10,10 @@ import Photos
 
 struct ImageMeta {
     var date: Date?
-    var coordinates: CLLocation?
+    var location: CLLocation?
     
-    init(date: Date?, coordinates: CLLocation?) {
+    init(date: Date?, location: CLLocation?) {
         self.date = date
-        self.coordinates = coordinates
+        self.location = location
     }
 }
