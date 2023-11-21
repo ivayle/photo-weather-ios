@@ -1,5 +1,5 @@
 //
-//  SpinnerViewController.swift
+//  LoadingIndicatorViewController.swift
 //  PhotoWeatherApp
 //
 //  Created by Ivaylo Petrov on 21.11.23.

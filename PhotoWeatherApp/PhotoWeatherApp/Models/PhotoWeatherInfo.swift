@@ -1,5 +1,5 @@
 //
-//  WeatherInfo.swift
+//  PhotoWeatherInfo.swift
 //  PhotoWeatherApp
 //
 //  Created by Ivaylo Petrov on 21.11.23.
@@ -8,9 +8,9 @@
 import Foundation
 
 // MARK: - Info
-struct WeatherInfo: Decodable {
+struct PhotoWeatherInfo: Decodable {
     let temp, feelsLike: Double
-    let weather: [Weather]
+    let weather: [PhotoWeather]
 
     enum CodingKeys: String, CodingKey {
         case temp

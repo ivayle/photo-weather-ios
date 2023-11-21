@@ -1,5 +1,5 @@
 //
-//  ImageMetaDecoder.swift
+//  PhotoMetaDecoder.swift
 //  PhotoWeatherApp
 //
 //  Created by Ivaylo Petrov on 20.11.23.

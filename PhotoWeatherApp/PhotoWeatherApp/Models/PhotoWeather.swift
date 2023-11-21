@@ -1,5 +1,5 @@
 //
-//  Weather.swift
+//  PhotoWeather.swift
 //  PhotoWeatherApp
 //
 //  Created by Ivaylo Petrov on 21.11.23.
@@ -8,6 +8,6 @@
 import Foundation
 
 // MARK: - Weather
-struct Weather: Decodable {
+struct PhotoWeather: Decodable {
     let main, description: String
 }

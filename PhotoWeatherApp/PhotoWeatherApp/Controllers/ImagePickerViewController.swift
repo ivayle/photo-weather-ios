@@ -1,5 +1,5 @@
 //
-//  ImagePicker.swift
+//  ImagePickerViewController.swift
 //  PhotoWeatherApp
 //
 //  Created by Ivaylo Petrov on 20.11.23.
