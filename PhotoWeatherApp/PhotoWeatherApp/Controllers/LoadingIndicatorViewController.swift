@@ -7,12 +7,11 @@
 
 import UIKit
 
-class SpinnerViewController: UIViewController {
+class LoadingIndicatorViewController: UIViewController {
     var spinner = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
 
     override func loadView() {
         view = UIView()
-//        view.backgroundColor = UIColor(white: 0, alpha: 0.5)
 
         spinner.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(spinner)
@@ -21,18 +20,22 @@ class SpinnerViewController: UIViewController {
         spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
-    func show(parent: UIViewController) {
+    func show(parent: UIViewController, completion: @escaping () -> ()) {
         parent.addChild(self)
         self.view.frame = parent.view.frame
         parent.view.addSubview(self.view)
         self.didMove(toParent: parent)
+        
         spinner.startAnimating()
+        completion()
     }
     
-    func hide() {
+    func hide(completion: @escaping () -> ()) {
         self.willMove(toParent: nil)
         self.view.removeFromSuperview()
         self.removeFromParent()
+        
         spinner.stopAnimating()
+        completion()
     }
 }

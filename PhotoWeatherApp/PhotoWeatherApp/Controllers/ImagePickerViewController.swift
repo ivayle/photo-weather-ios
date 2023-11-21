@@ -12,10 +12,10 @@ public protocol ImagePickerDelegate: AnyObject {
     func didSelect(image: UIImage?, info: [UIImagePickerController.InfoKey: Any])
 }
 
-class ImagePicker: NSObject {
+class ImagePickerViewController: NSObject {
 
     private let pickerController: UIImagePickerController
-    private weak var presentationController: UIViewController?
+    private weak var parentController: UIViewController?
     private weak var delegate: ImagePickerDelegate?
 
     public init(presentationController: UIViewController, delegate: ImagePickerDelegate) {
@@ -23,13 +23,17 @@ class ImagePicker: NSObject {
 
         super.init()
 
-        self.presentationController = presentationController
+        self.parentController = presentationController
         self.delegate = delegate
 
         self.pickerController.delegate = self
         self.pickerController.mediaTypes = ["public.image"]
     }
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     private func action(for type: UIImagePickerController.SourceType, title: String) -> UIAlertAction? {
         guard UIImagePickerController.isSourceTypeAvailable(type) else {
             return nil
@@ -37,7 +41,7 @@ class ImagePicker: NSObject {
 
         return UIAlertAction(title: title, style: .default) { [unowned self] _ in
             self.pickerController.sourceType = type
-            self.presentationController?.present(self.pickerController, animated: true)
+            self.parentController?.present(self.pickerController, animated: true)
         }
     }
 
@@ -57,7 +61,7 @@ class ImagePicker: NSObject {
             alertController.popoverPresentationController?.permittedArrowDirections = [.down, .up]
         }
 
-        self.presentationController?.present(alertController, animated: true)
+        self.parentController?.present(alertController, animated: true)
     }
     
     private func pickerController(_ controller: UIImagePickerController) {
@@ -73,7 +77,7 @@ class ImagePicker: NSObject {
     }
 }
 
-extension ImagePicker: UIImagePickerControllerDelegate {
+extension ImagePickerViewController: UIImagePickerControllerDelegate {
 
     public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.pickerController(picker)
@@ -89,5 +93,5 @@ extension ImagePicker: UIImagePickerControllerDelegate {
     }
 }
 
-extension ImagePicker: UINavigationControllerDelegate {
+extension ImagePickerViewController: UINavigationControllerDelegate {
 }

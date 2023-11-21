@@ -8,6 +8,7 @@
 import Foundation
 import Photos
 
+// MARK: - PhotoMeta
 struct PhotoMeta {
     var date: Date?
     var location: CLLocation?

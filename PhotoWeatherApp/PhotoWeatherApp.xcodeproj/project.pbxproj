@@ -10,7 +10,7 @@
 		1E2D97372B0BE9F400C0101F /* PhotoMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D97362B0BE9F400C0101F /* PhotoMeta.swift */; };
 		1E2D97392B0BEA4600C0101F /* PhotoMetaDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D97382B0BEA4600C0101F /* PhotoMetaDecoder.swift */; };
 		1E2D973B2B0BED7500C0101F /* PhotoLibraryAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D973A2B0BED7500C0101F /* PhotoLibraryAuthorizer.swift */; };
-		1E449F5B2B0C8F7900A5D831 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E449F5A2B0C8F7900A5D831 /* SpinnerViewController.swift */; };
+		1E449F5B2B0C8F7900A5D831 /* LoadingIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E449F5A2B0C8F7900A5D831 /* LoadingIndicatorViewController.swift */; };
 		1E449F5D2B0C997F00A5D831 /* PhotoWeatherMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E449F5C2B0C997F00A5D831 /* PhotoWeatherMeta.swift */; };
 		1E449F5F2B0C9A0000A5D831 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E449F5E2B0C9A0000A5D831 /* WeatherInfo.swift */; };
 		1E449F612B0C9A3800A5D831 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E449F602B0C9A3800A5D831 /* Weather.swift */; };
@@ -24,7 +24,7 @@
 		1E61899D2B0B9CB50068A0B2 /* PhotoWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61899C2B0B9CB50068A0B2 /* PhotoWeatherAppTests.swift */; };
 		1E6189A72B0B9CB50068A0B2 /* PhotoWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6189A62B0B9CB50068A0B2 /* PhotoWeatherAppUITests.swift */; };
 		1E6189A92B0B9CB50068A0B2 /* PhotoWeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6189A82B0B9CB50068A0B2 /* PhotoWeatherAppUITestsLaunchTests.swift */; };
-		1EF8FF432B0BC04E00202A2D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8FF422B0BC04E00202A2D /* ImagePicker.swift */; };
+		1EF8FF432B0BC04E00202A2D /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8FF422B0BC04E00202A2D /* ImagePickerViewController.swift */; };
 		6987FA58BE8E0D44CBC0748C /* Pods_PhotoWeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72607FC4B1A17B7DF1C8402A /* Pods_PhotoWeatherAppTests.framework */; };
 		B6FE6E6998B95429D983DAEA /* Pods_PhotoWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD144E50EBC7E57C1B0E949 /* Pods_PhotoWeatherApp.framework */; };
 		E910DD8D605940C4B2CA924E /* Pods_PhotoWeatherApp_PhotoWeatherAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC07C33DBF9243C31846AD00 /* Pods_PhotoWeatherApp_PhotoWeatherAppUITests.framework */; };
@@ -52,7 +52,7 @@
 		1E2D97362B0BE9F400C0101F /* PhotoMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMeta.swift; sourceTree = "<group>"; };
 		1E2D97382B0BEA4600C0101F /* PhotoMetaDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMetaDecoder.swift; sourceTree = "<group>"; };
 		1E2D973A2B0BED7500C0101F /* PhotoLibraryAuthorizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryAuthorizer.swift; sourceTree = "<group>"; };
-		1E449F5A2B0C8F7900A5D831 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		1E449F5A2B0C8F7900A5D831 /* LoadingIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorViewController.swift; sourceTree = "<group>"; };
 		1E449F5C2B0C997F00A5D831 /* PhotoWeatherMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWeatherMeta.swift; sourceTree = "<group>"; };
 		1E449F5E2B0C9A0000A5D831 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 		1E449F602B0C9A3800A5D831 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		1E6189A22B0B9CB50068A0B2 /* PhotoWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6189A62B0B9CB50068A0B2 /* PhotoWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWeatherAppUITests.swift; sourceTree = "<group>"; };
 		1E6189A82B0B9CB50068A0B2 /* PhotoWeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1EF8FF422B0BC04E00202A2D /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		1EF8FF422B0BC04E00202A2D /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		4E00932AE1B316F60E98B30A /* Pods-PhotoWeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoWeatherAppTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoWeatherAppTests/Pods-PhotoWeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		6CD144E50EBC7E57C1B0E949 /* Pods_PhotoWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72607FC4B1A17B7DF1C8402A /* Pods_PhotoWeatherAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoWeatherAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,14 +109,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E2D97322B0BE93100C0101F /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				1EF8FF422B0BC04E00202A2D /* ImagePicker.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		1E2D97352B0BE98A00C0101F /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				1E6189862B0B9CB30068A0B2 /* MainViewController.swift */,
-				1E449F5A2B0C8F7900A5D831 /* SpinnerViewController.swift */,
+				1E449F5A2B0C8F7900A5D831 /* LoadingIndicatorViewController.swift */,
+				1EF8FF422B0BC04E00202A2D /* ImagePickerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -192,7 +185,6 @@
 		1E88E51D2B0BAACC00865BF3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1E2D97322B0BE93100C0101F /* UI */,
 				1E2D97362B0BE9F400C0101F /* PhotoMeta.swift */,
 				1E449F5C2B0C997F00A5D831 /* PhotoWeatherMeta.swift */,
 				1E449F5E2B0C9A0000A5D831 /* WeatherInfo.swift */,
@@ -499,14 +491,14 @@
 			files = (
 				1E6189872B0B9CB30068A0B2 /* MainViewController.swift in Sources */,
 				1E6189832B0B9CB30068A0B2 /* AppDelegate.swift in Sources */,
-				1EF8FF432B0BC04E00202A2D /* ImagePicker.swift in Sources */,
+				1EF8FF432B0BC04E00202A2D /* ImagePickerViewController.swift in Sources */,
 				1E449F5F2B0C9A0000A5D831 /* WeatherInfo.swift in Sources */,
 				1E449F612B0C9A3800A5D831 /* Weather.swift in Sources */,
 				1E2D973B2B0BED7500C0101F /* PhotoLibraryAuthorizer.swift in Sources */,
 				1E2D97392B0BEA4600C0101F /* PhotoMetaDecoder.swift in Sources */,
 				1E6189852B0B9CB30068A0B2 /* SceneDelegate.swift in Sources */,
 				1E2D97372B0BE9F400C0101F /* PhotoMeta.swift in Sources */,
-				1E449F5B2B0C8F7900A5D831 /* SpinnerViewController.swift in Sources */,
+				1E449F5B2B0C8F7900A5D831 /* LoadingIndicatorViewController.swift in Sources */,
 				1E61898D2B0B9CB30068A0B2 /* PhotoWeatherApp.xcdatamodeld in Sources */,
 				1E449F5D2B0C997F00A5D831 /* PhotoWeatherMeta.swift in Sources */,
 			);
@@ -697,11 +689,12 @@
 				INFOPLIST_FILE = PhotoWeatherApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Photo Weather";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -733,11 +726,12 @@
 				INFOPLIST_FILE = PhotoWeatherApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Photo Weather";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

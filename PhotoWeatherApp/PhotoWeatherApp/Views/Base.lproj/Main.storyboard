@@ -40,6 +40,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="pnt-FI-VZO" id="2SE-Pf-IGb"/>
+                        <outlet property="selectPhotoButton" destination="jVj-pW-ER7" id="wei-fO-OQE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
