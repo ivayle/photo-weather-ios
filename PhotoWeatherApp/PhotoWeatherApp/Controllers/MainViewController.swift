@@ -51,7 +51,7 @@ extension MainViewController: ImagePickerDelegate {
         if let asset = info[.phAsset] as? PHAsset, let date = asset.creationDate, let location = asset.location {
             photoWeatherAPIService?.requestWeatherInformation(photoMeta: PhotoMeta(date: date, location: location), completion: { result in
                 if let image {
-                    self.photoImageBuilder?.drawToImage(photoResult: result, image: image) { newImage in
+                    self.photoImageBuilder?.drawToImage(photoResult: result, photoImage: image) { newImage in
                         self.loadingIndicatorViewController?.hide() {
                             self.selectPhotoButton.isEnabled = true
                         }
