@@ -30,8 +30,9 @@ class PhotoWeatherAPIService {
                         if let place {
                             let temperature: Int = Int(data.temp)
                             let description: String = weatherData.description
+                            let main: String = weatherData.main
                             
-                            completion(PhotoWeatherResult(place: place, temperature: temperature, description: description))
+                            completion(PhotoWeatherResult(place: place, temperature: temperature, main: main, description: description))
                         }
                     })
                 }

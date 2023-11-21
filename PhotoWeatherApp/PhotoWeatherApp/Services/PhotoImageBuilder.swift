@@ -15,6 +15,7 @@ class PhotoImageBuilder {
     private let startingCoordinateY: CGFloat = 0
     private let textFontRatioToImage: CGFloat = 25
     private let iconSizeRationToImage: CGFloat = 5
+    private let nativeIconRation: CGFloat = 1.20
 
     private let celsiusSign: String = "\u{00B0}"
     private let font: String = "Helvetica Bold"
@@ -29,7 +30,7 @@ class PhotoImageBuilder {
         let text = "\(place)  |  \(temperatureCelsius)  |  \(description)"
         let textFont = UIFont(name: self.font, size: photoImage.size.width / textFontRatioToImage)
         let iconWidth = photoImage.size.width / iconSizeRationToImage
-        let iconHeight = iconWidth / 1.75
+        let iconHeight = iconWidth / nativeIconRation
         let scale = UIScreen.main.scale
         
         UIGraphicsBeginImageContextWithOptions(photoImage.size, false, scale)
@@ -39,6 +40,7 @@ class PhotoImageBuilder {
             NSAttributedString.Key.foregroundColor: overlayTextColor,
         ]
         
+        // Text Overlay
         let textHeight = text.size(withAttributes: textFontAttributes as [NSAttributedString.Key : Any]).height
         let textWidth = text.size(withAttributes: textFontAttributes as [NSAttributedString.Key : Any]).width
         
@@ -51,13 +53,17 @@ class PhotoImageBuilder {
         let textRect = CGRectMake(textOverlay.minX + padding, textOverlay.minY + padding, photoImage.size.width, photoImage.size.height)
         text.draw(in: textRect, withAttributes: textFontAttributes as [NSAttributedString.Key : Any])
         
-        let iconOverlay = CGRect(x: padding, y: padding, width: iconWidth + (2 * padding), height: iconHeight + (2 * padding))
-        overlayColor.setFill()
-        UIRectFillUsingBlendMode(iconOverlay, .normal)
         
-        let resizedIcon = resize(image: UIImage(named: "CloudyIcon")!, targetSize: CGSize(width: iconWidth, height: iconHeight))
-        let coloredIcon = changeStrokes(for: resizedIcon, color: overlayTextColor)
-        coloredIcon.draw(in: CGRectMake(iconOverlay.minX + padding, iconOverlay.minY + padding, iconWidth, iconHeight))
+        // Icon Overlay
+        if let imageAsset = photoResult.main?.rawValue, let iconImage = UIImage(named: imageAsset) {
+            let iconOverlay = CGRect(x: padding, y: padding, width: iconWidth, height: iconHeight)
+            overlayColor.setFill()
+            UIRectFillUsingBlendMode(iconOverlay, .normal)
+            
+            let resizedIcon = resize(image: iconImage, targetSize: CGSize(width: iconWidth, height: iconHeight))
+            let coloredIcon = changeStrokes(for: resizedIcon, color: overlayTextColor)
+            coloredIcon.draw(in: CGRectMake(iconOverlay.minX, iconOverlay.minY, iconWidth, iconHeight))
+        }
         
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
@@ -67,23 +73,18 @@ class PhotoImageBuilder {
     private func resize(image: UIImage, targetSize: CGSize) -> UIImage {
         let size = image.size
 
-        let widthRatio  = targetSize.width  / size.width
+        let widthRatio  = targetSize.width / size.width
         let heightRatio = targetSize.height / size.height
 
-        // Figure out what our orientation is, and use that to form the rectangle
         var newSize: CGSize
-        if(widthRatio > heightRatio) {
+        if widthRatio > heightRatio {
            newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
         } else {
            newSize = CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
         }
 
-        // This is the rect that we've calculated out and this is what is actually used below
         let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
-
-        // Actually do the resizing to the rect using the ImageContext stuff
-        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
-        
+        UIGraphicsBeginImageContextWithOptions(newSize, false, UIScreen.main.scale)
         image.draw(in: rect)
         
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
